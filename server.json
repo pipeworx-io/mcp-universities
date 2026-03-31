@@ -1,0 +1,25 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.pipeworx-io/universities",
+  "title": "universities",
+  "description": "Universities MCP — Hipolabs Universities API (free, no auth)",
+  "version": "0.1.0",
+  "websiteUrl": "https://pipeworx.io/packs/universities",
+  "repository": {
+    "url": "https://github.com/pipeworx-io/mcp-universities",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@pipeworx/mcp-universities",
+      "version": "0.1.0"
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://gateway.pipeworx.io/universities/mcp"
+    }
+  ]
+}

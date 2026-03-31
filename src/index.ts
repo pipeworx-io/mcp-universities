@@ -1,10 +1,3 @@
-/**
- * Universities MCP — Hipolabs Universities API (free, no auth)
- *
- * Tools:
- * - search_universities: search universities by name and/or country
- */
-
 interface McpToolDefinition {
   name: string;
   description: string;
@@ -19,6 +12,14 @@ interface McpToolExport {
   tools: McpToolDefinition[];
   callTool: (name: string, args: Record<string, unknown>) => Promise<unknown>;
 }
+
+/**
+ * Universities MCP — Hipolabs Universities API (free, no auth)
+ *
+ * Tools:
+ * - search_universities: search universities by name and/or country
+ */
+
 
 const BASE_URL = 'http://universities.hipolabs.com';
 

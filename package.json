@@ -1,16 +1,19 @@
 {
   "name": "@pipeworx/mcp-universities",
   "version": "0.1.0",
+  "description": "Universities MCP — Hipolabs Universities API (free, no auth)",
   "type": "module",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "universities"],
   "license": "MIT",
-  "description": "MCP server for university data — search institutions worldwide",
-  "keywords": [
-    "mcp",
-    "mcp-server",
-    "model-context-protocol",
-    "pipeworx",
-    "universities"
-  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pipeworx-io/mcp-universities"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
   "devDependencies": {
     "typescript": "^5.7.0"
   }

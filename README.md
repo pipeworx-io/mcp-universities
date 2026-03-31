@@ -1,12 +1,13 @@
-# @pipeworx/mcp-universities
+# mcp-universities
 
-MCP server for university data — search institutions worldwide via the Hipolabs Universities API.
+Universities MCP — Hipolabs Universities API (free, no auth)
+
+Part of the [Pipeworx](https://pipeworx.io) open MCP gateway.
 
 ## Tools
 
 | Tool | Description |
 |------|-------------|
-| `search_universities` | Search for universities by name and/or country |
 
 ## Quick Start
 
@@ -22,7 +23,7 @@ Add to your MCP client config:
 }
 ```
 
-Or run via CLI:
+Or use the CLI:
 
 ```bash
 npx pipeworx use universities
