@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-universities",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Universities MCP — Hipolabs Universities API (free, no auth)",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-dce4bfbe801a1521527f7d0a808747778194d67c237ab71e7ade3afd4a59252d",
-    "sourceCommit": "b0fb3c31386cf0256dcf1e2f1b3440435a87ec35"
+    "sourceHash": "v1-65fe2fa7b71347f4ac051d2d4b80acdb1d025c35ff738613d060ddf6181aeda0",
+    "sourceCommit": "66a0692f029179984440cef6938cba7fdd41d66d"
   }
 }
