@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-universities",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "Universities MCP — Hipolabs Universities API (free, no auth)",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-universities": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "universities"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-universities.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/universities",
   "pipeworx": {
-    "sourceHash": "v1-65fe2fa7b71347f4ac051d2d4b80acdb1d025c35ff738613d060ddf6181aeda0",
-    "sourceCommit": "66a0692f029179984440cef6938cba7fdd41d66d"
+    "mode": "gateway",
+    "slug": "universities",
+    "gatewaySlug": "universities",
+    "sourceHash": "v1-a0de9b9f216b2b6a0d3f599badfdb6d62ad67d4b840a31dc2b6cc57f37278d83",
+    "sourceCommit": "98853f34516646cb7c4c1460f09249b262c0269e"
   }
 }

@@ -1,0 +1,35 @@
+[
+  {
+    "name": "search_universities",
+    "description": "Search universities worldwide by name and/or country using the Hipolabs API. Returns name, country, state/province, web pages, and email domains. At least one of name or country must be provided.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "University name or partial name (e.g., \"Harvard\", \"MIT\"). Accepts query, q, university, school as aliases."
+        },
+        "country": {
+          "type": "string",
+          "description": "Country name to filter by (e.g., \"United States\", \"United Kingdom\")"
+        },
+        "query": {
+          "type": "string",
+          "description": "Alias for name."
+        },
+        "q": {
+          "type": "string",
+          "description": "Alias for name."
+        },
+        "university": {
+          "type": "string",
+          "description": "Alias for name."
+        },
+        "school": {
+          "type": "string",
+          "description": "Alias for name."
+        }
+      }
+    }
+  }
+]
